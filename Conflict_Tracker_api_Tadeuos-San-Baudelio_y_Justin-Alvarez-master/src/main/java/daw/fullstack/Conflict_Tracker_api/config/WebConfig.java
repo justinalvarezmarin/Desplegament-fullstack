@@ -10,12 +10,10 @@ public class WebConfig implements WebMvcConfigurer {
     @Override
     public void addCorsMappings(CorsRegistry registry) {
         registry.addMapping("/**")
-                .allowedOriginPatterns(
-                        "http://localhost:5173",
-                        "https://*.vercel.app" // Esto permite cualquier despliegue de Vercel
-                )
+                // Esto va dentro de tu código Java en Railway
+                .allowedOrigins("https://frontendconflicttracker.vercel.app")
+                .allowedOrigins("frontendconflicttracker.vercel.app")
                 .allowedMethods("GET", "POST", "PUT", "DELETE", "OPTIONS")
-                .allowedHeaders("*")
-                .allowCredentials(true);
+                .allowedHeaders("*");
     }
 }
