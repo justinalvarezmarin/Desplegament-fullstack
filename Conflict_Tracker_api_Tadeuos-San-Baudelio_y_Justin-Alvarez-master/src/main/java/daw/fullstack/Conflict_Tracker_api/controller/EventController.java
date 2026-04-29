@@ -26,3 +26,4 @@ public class EventController {
         return service.createEvent(dto);
     }
 }
+E

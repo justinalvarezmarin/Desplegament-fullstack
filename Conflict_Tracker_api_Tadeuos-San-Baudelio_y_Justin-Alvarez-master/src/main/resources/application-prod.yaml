@@ -1,8 +1,13 @@
 spring:
   datasource:
     driver-class-name: org.postgresql.Driver
+<<<<<<< HEAD
     url: ${DB_URL}
     username: ${DB_USERNAME}
+=======
+    url: jdbc:postgresql://${DB_URL}
+    username: ${DB_USER}
+>>>>>>> 9f151903f1e3388090ea8c0500b23beb574faf15
     password: ${DB_PASSWORD}
     hikari:
       maximum-pool-size: 5
@@ -12,4 +17,12 @@ spring:
     hibernate:
       ddl-auto: update
     show-sql: false
+<<<<<<< HEAD
     defer-datasource-initialization: true
+=======
+    # Esto evita errores de conexión al arrancar en Render
+    defer-datasource-initialization: true
+
+server:
+  port: 8080
+>>>>>>> 9f151903f1e3388090ea8c0500b23beb574faf15
