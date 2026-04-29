@@ -1,15 +1,8 @@
 spring:
   application:
-<<<<<<< HEAD
     name: Conflict_Tracker
 profiles:
   active: prod
-
-=======
-    name: conflicttracker
-  profiles:
-    active: prod
->>>>>>> 9f151903f1e3388090ea8c0500b23beb574faf15
 
   jpa:
     show-sql: true
