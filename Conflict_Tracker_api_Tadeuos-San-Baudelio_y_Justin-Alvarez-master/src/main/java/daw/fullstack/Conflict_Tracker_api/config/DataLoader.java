@@ -5,10 +5,13 @@ import daw.fullstack.Conflict_Tracker_api.repository.ConflictRepository;
 import org.springframework.boot.CommandLineRunner;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
+import org.springframework.context.annotation.Profile;
 
 import java.time.LocalDate;
 
 @Configuration
+@Profile({"prod", "default"})
+
 public class DataLoader {
 
     @Bean
